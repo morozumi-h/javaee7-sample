@@ -27,6 +27,7 @@ public class HelloResource {
 	
 	@GET
 	@Path("hello2")
+	@Produces(MediaType.TEXT_PLAIN)
 	public String hello2(@Valid @BeanParam HelloRequest params){
 		System.out.println(params);
 		return "hello2";
